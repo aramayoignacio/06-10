@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.container { max-width: 640px; margin: 32px auto; padding: 16px; font-family: system-ui, Arial, sans-serif; }
+h1 { margin: 0 0 16px; font-size: 24px; }
+.add-form { display: flex; gap: 8px; margin-bottom: 16px; }
+.add-form input { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 6px; }
+.add-form button { padding: 8px 12px; }
+.status { margin: 8px 0; font-size: 14px; }
+.status.error { color: #b00020; }
+.task-list { list-style: none; padding: 0; margin: 0; }
+.task-item { display: flex; align-items: center; gap: 8px; padding: 10px 8px; border: 1px solid #eee; border-radius: 8px; margin-bottom: 8px; }
+.task-item.completed .task-title { text-decoration: line-through; color: #888; }
+.task-title { flex: 1; cursor: pointer; }
+.badge { font-size: 12px; padding: 4px 8px; border-radius: 12px; }
+.badge-ok { background: #e6fbec; color: #1e7c3f; border: 1px solid #c9f3d8; }
+.badge-pending { background: #fff5e6; color: #8c5b00; border: 1px solid #ffe1b3; }
+.delete-btn { padding: 6px 10px; border: 1px solid #f3b3b3; background: #ffe6e6; color: #7c1e1e; border-radius: 6px; cursor: pointer; }
