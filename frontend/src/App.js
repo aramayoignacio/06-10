@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const API_BASE = 'http://localhost:3000/api/tasks';
+const API_BASE = 'http://localhost:3001/api/tasks';
 
 function App() {
   const [tasks, setTasks] = useState([]);
